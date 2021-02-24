@@ -20,7 +20,7 @@ class Layout {
   public static translate(text: string, source: Layout, dest: Layout): string {
     let translated: string = "";
     for (let i of text) {
-      translated += source.keymap[dest.keymap.indexOf(i)];
+      translated += source.keymap[dest.keymap.indexOf(i.toLowerCase())];
     }
     return translated;
   }
