@@ -22,6 +22,8 @@ let layouts = [
     Layout.fromString("qwerty", 12, "qwertyuiop[]asdfghjkl;'\nzxcvbnm,./~~ "),
     Layout.fromString("workman", 12, "qdrwbjfup;[]ashtgyneoi'\nzxmcvkl,./~~ "),
     Layout.fromString("colemak dh", 12, "qwfpbjluy;[]arstgmneio'\nzxcdvkh,./~~ "),
+    Layout.fromString("dvorak", 12, "',.pyfgcrl/=aoeuidhtns-\n;qjkxbmwvz~~ "),
+    Layout.fromString("arensito", 12, "ql~p~~fudk~~arenbgsito~~zw~hjvcymx~~ "),
 ];
 const input = document.querySelector("#input");
 const output = document.querySelector("#output");
