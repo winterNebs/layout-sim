@@ -1,31 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
     <title>Layout Sim</title>
   </head>
   <body>
-    <input type="text" id="input" placeholder="Enter your text here"/>
-    <br>
-    <input type="text" id="output" disabled/>
-    <br>
-    <input type="text" id="test"/>
-    <br>
-    <button id="start">Start</button>
-    <br>
-    <label for="source"> Source layout </label>
-    <select id="source" name="source"></select>
-    <label for="dest"> Destination layout </label>
-    <select id="dest" name="dest"></select>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <div class="mx-auto" style="width: 50%">
+      <h1>Layout Sim</h1>
+      <p>
+        Ever wanted to try a layout without having to spend any time learning
+        it?
+      </p>
+      <p>
+        Use layout sim to convert text from one layout to another, that way you
+        can feel what typing on the layout is like, without having to learn
+        where any of the letters are.
+      </p>
+      <p>Simply enter your text, then hit start</p>
+      <div class="d-flex flex-column mb-3">
+        <div class="p-2 bd-highlight">
+        <input type="text" class="form-control" id="input" placeholder="Enter your text here" />
+        </div>
+        <div class="p-2">
+        <input type="text" class="form-control" id="output" disabled />
+        </div>
+        <div class="p-2">
+        <input type="text" class="form-control" id="test" />
+        </div>
+        <div class="p-2">
+        <button id="start" class="btn btn-primary">Start</button>
+        </div>
+        <div class="p-2">
+        </div>
+        <div class="p-2">
+        <label for="source"> Source layout </label>
+        <select id="source" class="form-select" name="source"></select>
+        <label for="dest"> Destination layout </label>
+        <select id="dest" class="form-select" name="dest"></select>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
     <script src="./dist/index.js"></script>
-
   </body>
 </html>

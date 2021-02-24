@@ -13,7 +13,7 @@ class Layout {
     static translate(text, source, dest) {
         let translated = "";
         for (let i of text) {
-            translated += source.keymap[dest.keymap.indexOf(i)];
+            translated += source.keymap[dest.keymap.indexOf(i.toLowerCase())];
         }
         return translated;
     }
