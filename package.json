@@ -1,0 +1,24 @@
+{
+  "name": "layoutsim",
+  "version": "1.0.0",
+  "description": "Simulate what typing on a different layout would be like, without actually having to learn it.",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winterNebs/layout-sim.git"
+  },
+  "author": "winternebs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winterNebs/layout-sim/issues"
+  },
+  "homepage": "https://github.com/winterNebs/layout-sim#readme"
+}
