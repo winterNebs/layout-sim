@@ -31,6 +31,7 @@ const test = document.querySelector("#test");
 const start = document.querySelector("#start");
 const source = document.querySelector("#source");
 const dest = document.querySelector("#dest");
+const liveChange = document.querySelector("#liveChange");
 for (let l of layouts) {
     let opt = document.createElement("option");
     let opt1 = document.createElement("option");
@@ -39,7 +40,21 @@ for (let l of layouts) {
     source.add(opt);
     dest.add(opt1);
 }
-start.onclick = () => {
+const translate = () => {
     output.value = Layout.translate(input.value, layouts.find((l) => l.name == source.value) || layouts[0], layouts.find((l) => l.name == dest.value) || layouts[0]);
     test.value = "";
+};
+start.onclick = translate;
+liveChange.onchange = (event) => {
+    const target = event.target;
+    if (target && target.checked) {
+        input.oninput = translate;
+        source.onchange = translate;
+        dest.onchange = translate;
+    }
+    else {
+        input.oninput = null;
+        source.onchange = null;
+        dest.onchange = null;
+    }
 };
