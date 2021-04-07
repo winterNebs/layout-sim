@@ -39,6 +39,7 @@ const test: HTMLInputElement = document.querySelector("#test")!;
 const start: HTMLButtonElement = document.querySelector("#start")!;
 const source: HTMLSelectElement = document.querySelector("#source")!;
 const dest: HTMLSelectElement = document.querySelector("#dest")!;
+const liveChange: HTMLSelectElement = document.querySelector("#liveChange")!;
 for (let l of layouts) {
   let opt = document.createElement("option");
   let opt1 = document.createElement("option");
@@ -47,7 +48,7 @@ for (let l of layouts) {
   source.add(opt);
   dest.add(opt1);
 }
-start.onclick = () => {
+const translate = () => {
   output.value = Layout.translate(
     input.value,
     layouts.find((l) => l.name == source.value) || layouts[0],
@@ -55,3 +56,17 @@ start.onclick = () => {
   );
   test.value = "";
 };
+start.onclick = translate;
+
+liveChange.onchange = (event) => {
+  const target = event.target as HTMLInputElement;
+  if (target && target.checked) {
+    input.oninput = translate;
+    source.onchange = translate;
+    dest.onchange = translate;
+  } else {
+    input.oninput = null;
+    source.onchange = null;
+    dest.onchange = null;
+  }
+}
