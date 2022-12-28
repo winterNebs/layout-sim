@@ -29,9 +29,20 @@ class Layout {
 let layouts: Layout[] = [
   Layout.fromString("qwerty", 12, "qwertyuiop[]asdfghjkl;'\nzxcvbnm,./~~ "),
   Layout.fromString("workman", 12, "qdrwbjfup;[]ashtgyneoi'\nzxmcvkl,./~~ "),
+  Layout.fromString("colemak", 12, "qwfpgjluy;[]arstdhneio'\nzxcvbkm,./~~ "),
   Layout.fromString("colemak dh", 12, "qwfpbjluy;[]arstgmneio'\nzxcdvkh,./~~ "),
   Layout.fromString("dvorak", 12, "',.pyfgcrl/=aoeuidhtns-\n;qjkxbmwvz~~ "),
   Layout.fromString("arensito", 12, "ql~p~~fudk~~arenbgsito~~zw~hjvcymx~~ "),
+  Layout.fromString("halmak", 12, "wlrbz;qudj[]shnt,.aeoi'\nfmvc/gpxky~~ "),
+  Layout.fromString("norman", 12, "qwdfkjurl;[]asetgynioh'\nzxcvbpm,./~~ "),
+  Layout.fromString("capewell", 12, ".ywdfjpluq[]aersgbtnio/\nxzcv;kmh,'~~ "),
+  Layout.fromString("asset", 12, "qwfgjypul;[]asetdhnior'\nzxcvbkm,./~~ "),
+  Layout.fromString("QGMLWY", 12, "qgmlwyfub;[]dstnriaeoh'\nzxcvjkp,./~~ "),
+  Layout.fromString("MTGAP", 12, "ypoujkdlcw[]inea,mhtsr'\nqz/.;bfgvx~~ "),
+  Layout.fromString("BEAKL 9", 12, "jhoukgcrfz[]qieaydstnb;\n/,'.xwmipv~~ "),
+  Layout.fromString("Balance Twelve", 12, "plcdw'uoykq;nrstm,aeihv\nzjfgb/.[]x~~ "),
+  Layout.fromString("TypeHacK Layout", 12, "jghpfqvou;[]rsntkyiael/\nzwmdbc,'.x~~ "),
+  Layout.fromString("apinguefyh-", 12, "',.osdtrlj[]apinguefyh;\nzxcvkbmwq/~~ "),
 ];
 const input: HTMLInputElement = document.querySelector("#input")!;
 const output: HTMLInputElement = document.querySelector("#output")!;
