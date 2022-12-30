@@ -39,7 +39,7 @@ let layouts: Layout[] = [
   Layout.fromString("asset", 12, "qwfgjypul;[]asetdhnior'\nzxcvbkm,./~~ "),
   Layout.fromString("QGMLWY", 12, "qgmlwyfub;[]dstnriaeoh'\nzxcvjkp,./~~ "),
   Layout.fromString("MTGAP", 12, "ypoujkdlcw[]inea,mhtsr'\nqz/.;bfgvx~~ "),
-  Layout.fromString("BEAKL 9", 12, "jhoukgcrfz[]qieaydstnb;\n/,'.xwmipv~~ "),
+  Layout.fromString("BEAKL 9", 12, "jhoukgcrfz[]qieaydstnb;\n/,'.xwmlpv~~ "),
   Layout.fromString("Balance Twelve", 12, "plcdw'uoykq;nrstm,aeihv\nzjfgb/.[]x~~ "),
   Layout.fromString("TypeHacK Layout", 12, "jghpfqvou;[]rsntkyiael/\nzwmdbc,'.x~~ "),
   Layout.fromString("apinguefyh-", 12, "',.osdtrlj[]apinguefyh;\nzxcvkbmwq/~~ "),
